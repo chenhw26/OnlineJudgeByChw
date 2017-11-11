@@ -1,4 +1,3 @@
-#include <cstdlib>
 #include <cstdio>
 
 void swap(int &a, int &b){
@@ -8,7 +7,7 @@ void swap(int &a, int &b){
 }
 
 int partition(int *p, int n){
-	int t = rand() % n;
+	int t = n / 2;
 	swap(p[t], p[0]);
 	int i = 1, j = n - 1;
 	while(i < j){
